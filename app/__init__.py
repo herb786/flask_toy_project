@@ -3,6 +3,9 @@ from flask import Flask
 from .models import db
 from .routes import main
 import os
+from dotenv import load_dotenv
+
+load_dotenv()
 
 def create_app():
     app = Flask(__name__)
@@ -10,18 +13,21 @@ def create_app():
     basedir = os.path.abspath(os.path.dirname(__file__))
     instance_path = os.path.join(os.path.dirname(basedir), 'instance')
    
-    if os.path.exists('/app'):
+    #if os.path.exists('/app'):
         # Docker Path
-        instance_path = '/app/instance'
-    else:
+        #instance_path = '/app/instance'
+    #else:
         # Local Dev Path (creates 'instance' in the current project folder)
-        instance_path = os.path.join(os.getcwd(), 'instance')
+        #instance_path = os.path.join(os.getcwd(), 'instance')
 
-    if not os.path.exists(instance_path):
-        os.makedirs(instance_path)
+    #if not os.path.exists(instance_path):
+        #os.makedirs(instance_path)
  
     print(f'DB path: {instance_path}')
-    app.config['SQLALCHEMY_DATABASE_URI'] = f'sqlite:///{os.path.join(instance_path, "farm_data.db")}'
+    #app.config['SQLALCHEMY_DATABASE_URI'] = f'sqlite:///{os.path.join(instance_path, "farm_data.db")}'
+
+    app.config['SECRET_KEY'] = os.getenv('SECRET_KEY', 'dev-key-for-now')
+    app.config['SQLALCHEMY_DATABASE_URI'] = os.getenv('DATABASE_URL', 'sqlite:///instance/farm_data.db')
     app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
     
     db.init_app(app)
