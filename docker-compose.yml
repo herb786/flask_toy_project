@@ -1,0 +1,25 @@
+version: '3.8'
+
+services:
+  flask_app:
+    build: .
+    container_name: farm_flask
+    restart: always
+    volumes:
+      - ./instance:/app/instance
+    environment:
+      - ADMIN_PWD=123456
+      - SQLALCHEMY_DATABASE_URI=sqlite:///app/instance/farm_data.db
+    expose:
+      - "5000"
+
+  nginx:
+    image: nginx:latest
+    container_name: farm_nginx
+    ports:
+      - "8089:80"
+    volumes:
+      - ./nginx/nginx.conf:/etc/nginx/conf.d/default.conf
+    depends_on:
+      - flask_app
+

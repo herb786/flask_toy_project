@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>TerraFarm | Admin Leads</title>
+    <style>
+        body { font-family: sans-serif; padding: 40px; background: #f4f7f4; }
+        table { width: 100%; border-collapse: collapse; background: white; border-radius: 8px; overflow: hidden; }
+        th, td { padding: 12px; text-align: left; border-bottom: 1px solid #ddd; }
+        th { background-color: #2d5a27; color: white; }
+        tr:hover { background-color: #f1f1f1; }
+        .status-tag { background: #e2f0e2; color: #2d5a27; padding: 4px 8px; border-radius: 4px; font-size: 0.8rem; }
+    </style>
+</head>
+<body>
+    <div style="background: white; padding: 20px; margin-bottom: 30px; border-radius: 8px;">
+	<h3>Add New Farm Solution</h3>
+	<form action="/admin/add-solution" method="POST" style="display: grid; gap: 10px;">
+	<input type="text" name="name" placeholder="Solution Name (e.g. Organic Fertilizer)" required>
+	<textarea name="description" placeholder="Description for the chatbot to use..."></textarea>
+	<input type="text" name="price" placeholder="Price Estimate (e.g. $20/bag)">
+	<button type="submit" style="background: #2d5a27; color: white; border: none; padding: 10px; cursor: pointer;">
+	    Save to Inventory
+	</button>
+	</form>
+    </div>
+
+    <hr>
+
+    <h3>Current Inventory</h3>
+    <ul>
+	{% for item in solutions %}
+	<li><b>{{ item.name }}</b> - {{ item.price_estimate }}</li>
+        {% endfor %}
+    </ul>
+    <h2>Customer Leads Captured by FarmBot</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Date</th>
+                <th>Contact Information</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for lead in leads %}
+            <tr>
+                <td>{{ lead.timestamp.strftime('%Y-%m-%d %H:%M') }}</td>
+                <td>{{ lead.contact_info }}</td>
+                <td><span class="status-tag">New Inquiry</span></td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    <p><a href="/">← Back to Site</a></p>
+</body>
+</html>
