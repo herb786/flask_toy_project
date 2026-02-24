@@ -1,5 +1,6 @@
 # app/__init__.py
 from flask import Flask
+from flask_migrate import Migrate
 from .models import db
 from .routes import main
 import os
@@ -33,6 +34,7 @@ def create_app():
     app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
     
     db.init_app(app)
+    migrate = Migrate(app, db)
 
     with app.app_context():
         app.register_blueprint(main)

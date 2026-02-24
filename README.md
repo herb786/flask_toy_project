@@ -30,4 +30,9 @@ export FLASK_APP=wsgi.py
 export FLASK_DEBUG=1
 flask run
 
+### 6. Migration
+flask db init      # Only run this once ever
+flask db migrate -m "Initial migration with current tables"  # Generates the script
+flask db upgrade   # Actually applies the change to the .db file
+
 The app will be available at http://127.0.0.1:5000.
