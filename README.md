@@ -12,13 +12,20 @@ git clone <your-repo-url>
 cd farm_flask
 
 ### 2. Create Virtual Environment
-python3 -m venv venv
+python3.11 -m venv venv
 source venv/bin/activate  # Windows: venv\Scripts\activate
 
 ### 3. Install Requirements
 pip install -r requirements.txt
 
-### 4. Run
+### 3.a. Install 
+python -m textblob.download_corpora
+
+### 4. Update ENV file
+Copy .env.example to a new file named .env.
+Update the values in .env to match your local setup.
+
+### 5. Run
 export FLASK_APP=wsgi.py
 export FLASK_DEBUG=1
 flask run

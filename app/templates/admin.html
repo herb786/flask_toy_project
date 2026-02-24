@@ -46,7 +46,16 @@
             <tr>
                 <td>{{ lead.timestamp.strftime('%Y-%m-%d %H:%M') }}</td>
                 <td>{{ lead.contact_info }}</td>
-                <td><span class="status-tag">New Inquiry</span></td>
+                <td>
+                    {% if lead.status == 'Urgent' %}
+                        <span class="badge bg-danger">Urgent</span>
+                    {% elif lead.status == 'Hot' %}
+                        <span class="badge bg-warning text-dark">Hot Lead</span>
+                    {% else %}
+                        <span class="badge bg-info">New</span>
+                    {% endif %}
+                </td>
+                <!--td><span class="status-tag">New Inquiry</span></td-->
             </tr>
             {% endfor %}
         </tbody>

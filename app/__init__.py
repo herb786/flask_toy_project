@@ -24,10 +24,12 @@ def create_app():
         #os.makedirs(instance_path)
  
     print(f'DB path: {instance_path}')
+    print(f'CWD path: {os.getcwd()}')
+    
     #app.config['SQLALCHEMY_DATABASE_URI'] = f'sqlite:///{os.path.join(instance_path, "farm_data.db")}'
 
     app.config['SECRET_KEY'] = os.getenv('SECRET_KEY', 'dev-key-for-now')
-    app.config['SQLALCHEMY_DATABASE_URI'] = os.getenv('DATABASE_URL', 'sqlite:///instance/farm_data.db')
+    app.config['SQLALCHEMY_DATABASE_URI'] = os.getenv('DATABASE_URL', 'sqlite:///farm_data.db')
     app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
     
     db.init_app(app)

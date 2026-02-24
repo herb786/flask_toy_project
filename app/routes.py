@@ -2,6 +2,7 @@ from flask import Blueprint, render_template, request, Response, url_for, flash,
 from .models import db, Lead, Solution
 import os
 import csv
+from .chatbot.logic import process_chat
 
 main = Blueprint('main', __name__)
 
@@ -74,8 +75,8 @@ def save_lead(contact_info):
             writer.writerow(['Timestamp', 'Contact Info'])
         writer.writerow([datetime.now().strftime("%Y-%m-%d %H:%M"), contact_info])
 
-@main.route('/chat', methods=['POST'])
-def chat():
+@main.route('/solution_chat', methods=['POST'])
+def solution_chat():
     user_text = request.json.get("message", "").lower()
     
     # Check database for solutions
@@ -96,3 +97,16 @@ def chat():
         response = "Thanks! I've saved your contact info. Our farm manager will reach out."
 
     return jsonify({"response": response})
+
+@main.route('/chat', methods=['POST'])
+def chat():
+    data = request.get_json()
+    user_message = data.get("message", "")
+
+    if not user_message:
+        return jsonify({"response": "I didn't quite catch that. Could you repeat it?"}), 400
+
+    # Execute the NLP logic (Intent, Entity, and Sentiment analysis)
+    bot_response = process_chat(user_message)
+
+    return jsonify({"response": bot_response})

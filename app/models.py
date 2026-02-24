@@ -15,3 +15,8 @@ class Solution(db.Model):
     description = db.Column(db.Text)
     price_estimate = db.Column(db.String(50))
     in_stock = db.Column(db.Boolean, default=True)
+
+class FrequentAQ(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    keyword = db.Column(db.String(50), unique=True, nullable=False)
+    answer = db.Column(db.Text, nullable=False)
