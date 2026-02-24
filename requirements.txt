@@ -6,3 +6,8 @@ python-dotenv==1.0.0
 spacy==3.7.2
 spacytextblob==4.0.0
 https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.7.1/en_core_web_sm-3.7.1-py3-none-any.whl
+spacy[transformers]>=3.7.0
+# Direct link to the transformer model package
+https://github.com/explosion/spacy-models/releases/download/en_core_web_trf-3.7.3/en_core_web_trf-3.7.3-py3-none-any.whl
+torch>=2.2.0  # Required for transformer backend
+#transformers[sentencepiece]

@@ -1,0 +1,16 @@
+{
+  "labels":[
+    "Drone Surveyance",
+    "Pricing & ROI",
+    "Automated Irrigation",
+    "Drone Surveillance",
+    "Sustainability",
+    "General",
+    "Off-Grid Systems",
+    "Data & Security",
+    "Installation & Support",
+    "Soil Analytics"
+  ],
+  "threshold":0.0,
+  "positive_label":null
+}

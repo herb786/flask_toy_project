@@ -51,9 +51,8 @@
     <div id="chat-header">FarmBot Assistant</div>
     <div id="chat-window">
         <p><i>Bot: Hello! How can I help your farm today?</i></p>
-        <div id="quick-actions" style="padding: 5px; display: flex; gap: 5px;">
+            <div id="quick-actions" style="padding: 5px; display: flex; gap: 5px;">
             <button onclick="quickAction('Request a Quote')" style="font-size: 0.7rem; cursor: pointer;">Request Quote</button>
-            <button onclick="quickAction('Soil Analysis Info')" style="font-size: 0.7rem; cursor: pointer;">Soil Info</button>
         </div>
 
         <script>
@@ -82,7 +81,7 @@
         chatBox.scrollTop = chatBox.scrollHeight;
 
         try {
-            const response = await fetch('/chat', {
+            const response = await fetch('/chat_index', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({ message: message })

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TerraFarm Solutions | Sustainable Agriculture</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <style>
+        :root { --farm-green: #2d5a27; --accent-gold: #f4b400; --light-bg: #f9fbf9; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; background: var(--light-bg); }
+        header { background: var(--farm-green); color: white; padding: 2rem; text-align: center; }
+        .container { max-width: 1000px; margin: auto; padding: 2rem; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
+        .card { background: white; padding: 1.5rem; border-radius: 8px; border-left: 5px solid var(--farm-green); box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+        
+        /* Chatbot UI */
+        #chat-widget { position: fixed; bottom: 20px; right: 20px; width: 360px; background: white; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.2); overflow: hidden; }
+        #chat-header { background: var(--farm-green); color: white; padding: 10px; font-weight: bold; }
+        #chat-window { height: 400px; overflow-y: auto; padding: 10px; font-size: 0.9rem; border-bottom: 1px solid #eee; }
+        .input-area { display: flex; }
+        #user-input { flex-grow: 1; border: none; padding: 10px; outline: none; }
+        #send-btn { background: var(--accent-gold); border: none; padding: 10px; cursor: pointer; }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>TerraFarm Solutions Model #3</h1>
+    <p>Empowering small farms with smart technology.</p>
+</header>
+
+<div class="container">
+    <h2>Our Solutions</h2>
+    <div class="grid">
+        <div class="card">
+            <h3>Soil Analytics</h3>
+            <p>Real-time nutrient tracking to optimize your harvest cycle.</p>
+        </div>
+        <div class="card">
+            <h3>Automated Irrigation</h3>
+            <p>Save up to 30% more water with our sensor-based systems.</p>
+        </div>
+        <div class="card">
+            <h3>Direct-to-Market</h3>
+            <p>Skip the middleman. We connect your harvest to local buyers.</p>
+        </div>
+    </div>
+</div>
+
+<div id="chat-widget">
+    <div id="chat-header">FarmBot Assistant</div>
+    <div id="chat-window">
+        <p><i>Bot: Hello! How can I help your farm today?</i></p>
+        <div id="quick-actions" style="padding: 5px; display: flex; gap: 5px;">
+            <button onclick="quickAction('Request a Quote')" style="font-size: 0.7rem; cursor: pointer;">Request Quote</button>
+            <button onclick="quickAction('Soil Analysis Info')" style="font-size: 0.7rem; cursor: pointer;">Soil Info</button>
+        </div>
+
+        <script>
+            function quickAction(text) {
+                document.getElementById('user-input').value = text;
+                sendMessage();
+             }
+         </script>
+    </div>
+    <div class="input-area">
+        <input type="text" id="user-input" placeholder="Ask about harvest dates...">
+        <button id="send-btn" onclick="sendMessage()">Send</button>
+    </div>
+</div>
+
+<script>
+    async function sendMessage() {
+        const input = document.getElementById('user-input');
+        const chatBox = document.getElementById('chat-window');
+        const message = input.value.trim();
+
+        if (!message) return;
+
+        chatBox.innerHTML += `<div><b>You:</b> ${message}</div>`;
+        input.value = '';
+        chatBox.scrollTop = chatBox.scrollHeight;
+
+        try {
+            const response = await fetch('/chat_model3', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ message: message })
+            });
+            const data = await response.json();
+            chatBox.innerHTML += `<div style="color: #2d5a27;"><b>Bot:</b> ${data.response}</div>`;
+            chatBox.scrollTop = chatBox.scrollHeight;
+        } catch (e) {
+            chatBox.innerHTML += `<div style="color: red;">Error connecting to server.</div>`;
+        }
+    }
+
+    // Allow "Enter" key to send
+    document.getElementById('user-input').addEventListener('keypress', (e) => {
+        if (e.key === 'Enter') sendMessage();
+    });
+</script>
+
+</body>
+</html>

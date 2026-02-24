@@ -1,0 +1,618 @@
+{
+  "business_info": "TerraPulse Agrotech",
+  "faqs": [
+    {
+      "id": 1,
+      "category": "Soil Analytics",
+      "question": "How deep do your sensors measure soil moisture?",
+      "answer": "Our standard probes measure at 10cm, 30cm, and 60cm depths to provide a complete profile of the root zone."
+    },
+    {
+      "id": 2,
+      "category": "Soil Analytics",
+      "question": "What nutrients can your soil analysis detect?",
+      "answer": "Our real-time sensors track NPK (Nitrogen, Phosphorus, Potassium) levels, pH, electrical conductivity, and temperature."
+    },
+    {
+      "id": 3,
+      "category": "Automated Irrigation",
+      "question": "Can the irrigation system be controlled via smartphone?",
+      "answer": "Yes, our mobile app allows for manual overrides, schedule adjustments, and real-time flow monitoring from anywhere."
+    },
+    {
+      "id": 4,
+      "category": "Drone Surveyance",
+      "question": "How often should I schedule a drone flyover?",
+      "answer": "For most row crops, we recommend a bi-weekly survey during the peak growing season to catch pest or hydration issues early."
+    },
+    {
+      "id": 5,
+      "category": "Off-Grid Systems",
+      "question": "Will the solar-powered pumps work on cloudy days?",
+      "answer": "Yes, our systems include industrial-grade battery backups that provide up to 72 hours of operation without direct sunlight."
+    },
+    {
+      "id": 6,
+      "category": "Soil Analytics",
+      "question": "How accurate are your soil moisture readings?",
+      "answer": "Our sensors provide ±2% volumetric water content accuracy, calibrated to local soil conditions."
+    },
+    {
+      "id": 7,
+      "category": "Soil Analytics",
+      "question": "Do your sensors require frequent calibration?",
+      "answer": "Sensors are factory calibrated but we recommend annual field calibration for optimal accuracy."
+    },
+    {
+      "id": 8,
+      "category": "Soil Analytics",
+      "question": "Can your system detect soil salinity issues?",
+      "answer": "Yes, electrical conductivity measurements help identify salinity buildup before it impacts yield."
+    },
+    {
+      "id": 9,
+      "category": "Soil Analytics",
+      "question": "Is historical soil data stored in the platform?",
+      "answer": "Yes, all readings are stored in the cloud dashboard with multi-season comparison tools."
+    },
+    {
+      "id": 10,
+      "category": "Soil Analytics",
+      "question": "Do you offer soil compaction monitoring?",
+      "answer": "Yes, optional compaction probes help assess root penetration resistance."
+    },
+    {
+      "id": 11,
+      "category": "Soil Analytics",
+      "question": "Can your system integrate with third-party lab results?",
+      "answer": "Yes, lab soil reports can be uploaded and synchronized with sensor data."
+    },
+    {
+      "id": 12,
+      "category": "Soil Analytics",
+      "question": "How long do soil sensors last?",
+      "answer": "With proper maintenance, sensors typically operate reliably for 5–7 years."
+    },
+    {
+      "id": 13,
+      "category": "Soil Analytics",
+      "question": "Do sensors work in sandy and clay soils?",
+      "answer": "Yes, our probes are optimized for multiple soil types including sandy, loamy, and clay soils."
+    },
+    {
+      "id": 14,
+      "category": "Soil Analytics",
+      "question": "Can I receive soil alerts via SMS?",
+      "answer": "Yes, threshold-based alerts can be delivered via SMS, email, or app notifications."
+    },
+    {
+      "id": 15,
+      "category": "Soil Analytics",
+      "question": "Is installation invasive to crops?",
+      "answer": "No, installation is minimally invasive and designed to avoid root damage."
+    },
+
+    {
+      "id": 16,
+      "category": "Automated Irrigation",
+      "question": "Does the system adjust watering automatically?",
+      "answer": "Yes, irrigation schedules adapt automatically based on real-time soil moisture and weather data."
+    },
+    {
+      "id": 17,
+      "category": "Automated Irrigation",
+      "question": "Can it integrate with drip and pivot systems?",
+      "answer": "Yes, our controllers support drip, sprinkler, and center pivot irrigation setups."
+    },
+    {
+      "id": 18,
+      "category": "Automated Irrigation",
+      "question": "How much water savings can I expect?",
+      "answer": "Most farms experience 20–35% water savings in the first season."
+    },
+    {
+      "id": 19,
+      "category": "Automated Irrigation",
+      "question": "What happens if internet connectivity is lost?",
+      "answer": "The system continues operating using stored schedules and syncs data once connectivity is restored."
+    },
+    {
+      "id": 20,
+      "category": "Automated Irrigation",
+      "question": "Can the system detect leaks?",
+      "answer": "Yes, abnormal flow patterns trigger automatic leak alerts."
+    },
+    {
+      "id": 21,
+      "category": "Automated Irrigation",
+      "question": "Does it factor in weather forecasts?",
+      "answer": "Yes, weather-based predictive adjustments prevent overwatering before rainfall."
+    },
+    {
+      "id": 22,
+      "category": "Automated Irrigation",
+      "question": "Can I control multiple fields from one dashboard?",
+      "answer": "Yes, the platform allows centralized control of unlimited zones and fields."
+    },
+    {
+      "id": 23,
+      "category": "Automated Irrigation",
+      "question": "Is there a manual override option?",
+      "answer": "Yes, users can override automation at any time through the app or control panel."
+    },
+    {
+      "id": 24,
+      "category": "Automated Irrigation",
+      "question": "Do you support fertigation systems?",
+      "answer": "Yes, our system integrates with fertigation injectors for nutrient delivery."
+    },
+    {
+      "id": 25,
+      "category": "Automated Irrigation",
+      "question": "Is installation complicated?",
+      "answer": "Installation is straightforward and typically completed within one day per field."
+    },
+
+    {
+      "id": 26,
+      "category": "Drone Surveillance",
+      "question": "What types of cameras do your drones use?",
+      "answer": "We use multispectral, thermal, and high-resolution RGB cameras."
+    },
+    {
+      "id": 27,
+      "category": "Drone Surveillance",
+      "question": "Can drones detect crop disease?",
+      "answer": "Yes, multispectral imaging identifies stress signatures before visible symptoms appear."
+    },
+    {
+      "id": 28,
+      "category": "Drone Surveillance",
+      "question": "How large of an area can be covered per flight?",
+      "answer": "Up to 250 acres per flight depending on terrain and battery conditions."
+    },
+    {
+      "id": 29,
+      "category": "Drone Surveillance",
+      "question": "Are drone operations compliant with aviation regulations?",
+      "answer": "Yes, all flights are conducted by licensed operators following local aviation laws."
+    },
+    {
+      "id": 30,
+      "category": "Drone Surveillance",
+      "question": "Can I receive NDVI maps?",
+      "answer": "Yes, NDVI and other vegetation indices are included in every analytical report."
+    },
+
+    {
+      "id": 31,
+      "category": "Drone Surveillance",
+      "question": "Do drones help with pest detection?",
+      "answer": "Yes, aerial imagery helps identify irregular crop patterns associated with pest infestations."
+    },
+    {
+      "id": 32,
+      "category": "Drone Surveillance",
+      "question": "How soon are reports delivered?",
+      "answer": "Most reports are delivered within 24–48 hours after flight completion."
+    },
+    {
+      "id": 33,
+      "category": "Drone Surveillance",
+      "question": "Can drones monitor livestock?",
+      "answer": "Yes, drones can track herd movement and detect anomalies in grazing areas."
+    },
+    {
+      "id": 34,
+      "category": "Drone Surveillance",
+      "question": "Are drone images stored historically?",
+      "answer": "Yes, historical imagery is archived for seasonal comparisons."
+    },
+    {
+      "id": 35,
+      "category": "Drone Surveillance",
+      "question": "Can drones assess irrigation uniformity?",
+      "answer": "Yes, thermal imaging detects uneven watering patterns."
+    },
+
+    {
+      "id": 36,
+      "category": "Off-Grid Systems",
+      "question": "What size solar array is required?",
+      "answer": "System size depends on pump capacity and field size; we provide custom energy audits."
+    },
+    {
+      "id": 37,
+      "category": "Off-Grid Systems",
+      "question": "Do you offer hybrid solar-wind systems?",
+      "answer": "Yes, hybrid configurations are available for areas with variable sunlight."
+    },
+    {
+      "id": 38,
+      "category": "Off-Grid Systems",
+      "question": "How long do batteries last?",
+      "answer": "Our lithium battery systems typically last 8–12 years."
+    },
+    {
+      "id": 39,
+      "category": "Off-Grid Systems",
+      "question": "Are systems weatherproof?",
+      "answer": "Yes, all components are IP-rated for outdoor agricultural environments."
+    },
+    {
+      "id": 40,
+      "category": "Off-Grid Systems",
+      "question": "Can off-grid systems power sensors and drones?",
+      "answer": "Yes, systems are designed to power irrigation controllers, sensors, and drone charging stations."
+    },
+
+    {
+      "id": 41,
+      "category": "Off-Grid Systems",
+      "question": "Is remote monitoring available?",
+      "answer": "Yes, energy production and battery health can be monitored via our dashboard."
+    },
+    {
+      "id": 42,
+      "category": "Off-Grid Systems",
+      "question": "Do you offer financing options?",
+      "answer": "Yes, flexible financing and leasing programs are available."
+    },
+    {
+      "id": 43,
+      "category": "Off-Grid Systems",
+      "question": "Can systems expand over time?",
+      "answer": "Yes, modular expansion allows scaling as farm needs grow."
+    },
+    {
+      "id": 44,
+      "category": "Off-Grid Systems",
+      "question": "What maintenance is required?",
+      "answer": "Minimal maintenance is required, including panel cleaning and periodic inspections."
+    },
+    {
+      "id": 45,
+      "category": "Off-Grid Systems",
+      "question": "Are there government incentives available?",
+      "answer": "Many regions offer renewable energy incentives; we assist with application support."
+    },
+    {
+      "id": 46,
+      "category": "Soil Analytics",
+      "question": "Can soil data help improve fertilizer efficiency?",
+      "answer": "Yes, real-time nutrient tracking enables precise fertilizer application, reducing waste and improving yield."
+    },
+    {
+      "id": 47,
+      "category": "Soil Analytics",
+      "question": "Do you provide soil health scoring?",
+      "answer": "Yes, our dashboard generates a soil health index based on moisture, nutrients, salinity, and temperature."
+    },
+    {
+      "id": 48,
+      "category": "Soil Analytics",
+      "question": "Can sensors operate year-round?",
+      "answer": "Yes, sensors are designed for continuous monitoring across all seasons."
+    },
+    {
+      "id": 49,
+      "category": "Soil Analytics",
+      "question": "Are the sensors wireless?",
+      "answer": "Yes, we use low-power wide-area (LPWAN) wireless communication for reliable field connectivity."
+    },
+    {
+      "id": 50,
+      "category": "Soil Analytics",
+      "question": "How is data transmitted from remote fields?",
+      "answer": "Data is transmitted via cellular, LoRaWAN, or satellite depending on location."
+    },
+
+    {
+      "id": 51,
+      "category": "Automated Irrigation",
+      "question": "Can irrigation zones be customized?",
+      "answer": "Yes, users can define unlimited irrigation zones based on crop type or soil variability."
+    },
+    {
+      "id": 52,
+      "category": "Automated Irrigation",
+      "question": "Does the system support variable rate irrigation (VRI)?",
+      "answer": "Yes, our controllers enable precision variable rate irrigation for optimized water distribution."
+    },
+    {
+      "id": 53,
+      "category": "Automated Irrigation",
+      "question": "Can the system reduce energy costs?",
+      "answer": "Yes, smart scheduling reduces pump runtime and lowers electricity consumption."
+    },
+    {
+      "id": 54,
+      "category": "Automated Irrigation",
+      "question": "Are flow meters included?",
+      "answer": "Yes, high-precision flow meters are integrated for accurate water usage tracking."
+    },
+    {
+      "id": 55,
+      "category": "Automated Irrigation",
+      "question": "Can alerts be set for overwatering?",
+      "answer": "Yes, threshold alerts notify you if soil moisture exceeds optimal levels."
+    },
+
+    {
+      "id": 56,
+      "category": "Drone Surveillance",
+      "question": "Can drones create 3D terrain maps?",
+      "answer": "Yes, our drones generate high-resolution 3D elevation and contour maps."
+    },
+    {
+      "id": 57,
+      "category": "Drone Surveillance",
+      "question": "Do drones assist in planting analysis?",
+      "answer": "Yes, aerial imagery helps evaluate planting uniformity and emergence rates."
+    },
+    {
+      "id": 58,
+      "category": "Drone Surveillance",
+      "question": "Can drones monitor water stress?",
+      "answer": "Yes, thermal sensors detect early signs of crop water stress."
+    },
+    {
+      "id": 59,
+      "category": "Drone Surveillance",
+      "question": "Is pesticide drift monitoring available?",
+      "answer": "Yes, drone analysis can help assess spray coverage and drift risks."
+    },
+    {
+      "id": 60,
+      "category": "Drone Surveillance",
+      "question": "Do you provide crop yield estimation?",
+      "answer": "Yes, AI-powered models estimate yield based on vegetation indices and seasonal data."
+    },
+
+    {
+      "id": 61,
+      "category": "Off-Grid Systems",
+      "question": "Can systems operate completely off the utility grid?",
+      "answer": "Yes, our off-grid packages are fully independent and require no utility connection."
+    },
+    {
+      "id": 62,
+      "category": "Off-Grid Systems",
+      "question": "Are generators included as backup?",
+      "answer": "Optional generator integration is available for extended backup needs."
+    },
+    {
+      "id": 63,
+      "category": "Off-Grid Systems",
+      "question": "How quickly can systems be deployed?",
+      "answer": "Most installations are completed within 2–4 weeks after site assessment."
+    },
+    {
+      "id": 64,
+      "category": "Off-Grid Systems",
+      "question": "Do panels withstand hail and storms?",
+      "answer": "Yes, panels are rated for high-impact resistance and extreme weather conditions."
+    },
+    {
+      "id": 65,
+      "category": "Off-Grid Systems",
+      "question": "Is system performance guaranteed?",
+      "answer": "Yes, we provide performance warranties and energy output guarantees."
+    },
+
+    {
+      "id": 66,
+      "category": "Pricing & ROI",
+      "question": "What is the typical return on investment?",
+      "answer": "Most farms achieve ROI within 2–3 growing seasons through water and input savings."
+    },
+    {
+      "id": 67,
+      "category": "Pricing & ROI",
+      "question": "Do you offer subscription plans?",
+      "answer": "Yes, software and analytics services are available via annual subscription."
+    },
+    {
+      "id": 68,
+      "category": "Pricing & ROI",
+      "question": "Are there upfront hardware costs?",
+      "answer": "Yes, hardware is purchased upfront or financed depending on your plan."
+    },
+    {
+      "id": 69,
+      "category": "Pricing & ROI",
+      "question": "Is there a free trial available?",
+      "answer": "We offer pilot programs for qualifying farms."
+    },
+    {
+      "id": 70,
+      "category": "Pricing & ROI",
+      "question": "Can small farms afford the system?",
+      "answer": "Yes, scalable packages are designed for farms of all sizes."
+    },
+
+    {
+      "id": 71,
+      "category": "Data & Security",
+      "question": "Who owns the farm data?",
+      "answer": "You retain full ownership of your farm data at all times."
+    },
+    {
+      "id": 72,
+      "category": "Data & Security",
+      "question": "Is data encrypted?",
+      "answer": "Yes, all data is encrypted in transit and at rest using industry standards."
+    },
+    {
+      "id": 73,
+      "category": "Data & Security",
+      "question": "Can data be exported?",
+      "answer": "Yes, reports and raw data can be exported in multiple formats."
+    },
+    {
+      "id": 74,
+      "category": "Data & Security",
+      "question": "Do you comply with data regulations?",
+      "answer": "Yes, we adhere to regional and international data protection standards."
+    },
+    {
+      "id": 75,
+      "category": "Data & Security",
+      "question": "Is there multi-user access control?",
+      "answer": "Yes, role-based permissions allow controlled team access."
+    },
+
+    {
+      "id": 76,
+      "category": "Installation & Support",
+      "question": "Do you provide on-site installation?",
+      "answer": "Yes, certified technicians handle installation and training."
+    },
+    {
+      "id": 77,
+      "category": "Installation & Support",
+      "question": "Is training included?",
+      "answer": "Yes, comprehensive onboarding and training are included."
+    },
+    {
+      "id": 78,
+      "category": "Installation & Support",
+      "question": "Do you offer remote support?",
+      "answer": "Yes, 24/7 remote monitoring and technical support are available."
+    },
+    {
+      "id": 79,
+      "category": "Installation & Support",
+      "question": "Are maintenance packages available?",
+      "answer": "Yes, we offer annual maintenance and service contracts."
+    },
+    {
+      "id": 80,
+      "category": "Installation & Support",
+      "question": "What is your response time for issues?",
+      "answer": "Most support requests are addressed within 24 hours."
+    },
+
+    {
+      "id": 81,
+      "category": "Sustainability",
+      "question": "How does your system reduce environmental impact?",
+      "answer": "By optimizing water and fertilizer use, we reduce runoff and resource waste."
+    },
+    {
+      "id": 82,
+      "category": "Sustainability",
+      "question": "Can your system help with carbon reporting?",
+      "answer": "Yes, we provide sustainability metrics useful for carbon reporting initiatives."
+    },
+    {
+      "id": 83,
+      "category": "Sustainability",
+      "question": "Does precision irrigation conserve groundwater?",
+      "answer": "Yes, targeted watering significantly reduces groundwater extraction."
+    },
+    {
+      "id": 84,
+      "category": "Sustainability",
+      "question": "Are materials recyclable?",
+      "answer": "Many system components are recyclable and environmentally compliant."
+    },
+    {
+      "id": 85,
+      "category": "Sustainability",
+      "question": "Do your systems support regenerative farming?",
+      "answer": "Yes, soil monitoring supports regenerative and conservation practices."
+    },
+
+    {
+      "id": 86,
+      "category": "General",
+      "question": "What crops are compatible with your solutions?",
+      "answer": "Our systems support row crops, orchards, vineyards, greenhouse crops, and specialty farming."
+    },
+    {
+      "id": 87,
+      "category": "General",
+      "question": "Do you operate internationally?",
+      "answer": "Yes, TerraFarm Agrotech provides solutions globally."
+    },
+    {
+      "id": 88,
+      "category": "General",
+      "question": "Can solutions be customized?",
+      "answer": "Yes, every deployment is tailored to farm size, crop type, and climate."
+    },
+    {
+      "id": 89,
+      "category": "General",
+      "question": "Do you partner with agronomists?",
+      "answer": "Yes, we collaborate with agronomists for data-driven crop management strategies."
+    },
+    {
+      "id": 90,
+      "category": "General",
+      "question": "Is the platform cloud-based?",
+      "answer": "Yes, our secure cloud platform enables access from anywhere."
+    },
+    {
+      "id": 91,
+      "category": "General",
+      "question": "How do I get started?",
+      "answer": "Contact our team for a free consultation and on-site assessment."
+    },
+    {
+      "id": 92,
+      "category": "General",
+      "question": "Do you offer demonstrations?",
+      "answer": "Yes, we provide live demos and pilot programs."
+    },
+    {
+      "id": 93,
+      "category": "General",
+      "question": "What makes TerraFarm different?",
+      "answer": "We combine soil intelligence, automation, aerial analytics, and renewable energy into one integrated platform."
+    },
+    {
+      "id": 94,
+      "category": "General",
+      "question": "Can your platform integrate with farm management software?",
+      "answer": "Yes, API integrations are available for leading farm management platforms."
+    },
+    {
+      "id": 95,
+      "category": "General",
+      "question": "Is there a contract requirement?",
+      "answer": "Contract terms vary by service package and financing option."
+    },
+    {
+      "id": 96,
+      "category": "General",
+      "question": "How scalable is the system?",
+      "answer": "Our modular architecture allows seamless scaling from small farms to large enterprises."
+    },
+    {
+      "id": 97,
+      "category": "General",
+      "question": "Can the system operate in extreme climates?",
+      "answer": "Yes, components are tested for high heat, frost, and heavy rainfall environments."
+    },
+    {
+      "id": 98,
+      "category": "General",
+      "question": "Do you provide warranty coverage?",
+      "answer": "Yes, hardware includes manufacturer warranties and optional extended coverage."
+    },
+    {
+      "id": 99,
+      "category": "General",
+      "question": "Is technical expertise required to operate the system?",
+      "answer": "No, the interface is user-friendly and designed for farmers without technical backgrounds."
+    },
+    {
+      "id": 100,
+      "category": "General",
+      "question": "How soon can I see measurable results?",
+      "answer": "Many customers report measurable water savings and crop health improvements within the first growing season."
+    }
+  ]
+}
